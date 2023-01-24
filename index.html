@@ -18,16 +18,24 @@
             margin-right:auto;}
       h1   {font-family: 'Parisienne', cursive;
             size: 80px}
-      p    {color: red;}
-      iframe {width: 100%;
-              aspect-ratio: 16 / 9;}
+      p    {color: red;}      
+      .video-container {position: relative;
+                        padding-bottom: 56.25%; /* 16:9 */
+                        height: 0;}
+    .video-container iframe {position: absolute;
+                             top: 0;
+                             left: 0;
+                             width: 100%;
+                             height: 100%;}
     </style>
   </head>
   <body>
     <h1>Hochzeit</h1>
     <p>Wichtige Infos:</p>
     
-    <iframe width="100%" height="600px" src="https://www.youtube.com/embed/1JN1kjhn-eA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="video-container">
+      <iframe width="100%" height="600px" src="https://www.youtube.com/embed/1JN1kjhn-eA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
     <a href="https://www.youtube.com/watch?v=nd2GMn_GArI">Take me to a Higher Place</a>
   </body>
 </html>
